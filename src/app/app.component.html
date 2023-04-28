@@ -11,7 +11,9 @@
     <mat-sidenav #sidenav mode="side" class="width-300">
         <mat-nav-list>
             <mat-list-item *ngFor="let menu of menus" [routerLink]="menu.route" >
-                <mat-icon  matListItemIcon color="primary">{{menu.icon}}</mat-icon>
+                <div matListItemIcon>
+                    <mat-icon  color="primary">{{menu.icon}}</mat-icon>
+                </div>
                 <a matListItemTitle>
                     {{ menu.name }}</a>
             </mat-list-item>
